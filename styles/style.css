@@ -41,14 +41,6 @@
   border: none;
 }
 
-.btn-primary:hover {
-  background-color: #e55f05;
-  /* slightly darker orange */
-  transform: scale(1.05);
-  /* subtle zoom */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  /* soft shadow */
-}
 
 main {
   max-width: 1440px;
@@ -245,11 +237,23 @@ main>section {
     flex-direction: column;
   }
 
+  .nav-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* same as 1fr 1fr 1fr */
+    gap: 20px;
+  }
+
+  .teams{
+    margin-top: 50px;
+  }
+
   .team-img-container,
   .facts-container,
   .sponsor-companies {
     grid-template-columns: 1fr;
   }
+
 
   .facts-container {
     justify-items: center;
@@ -267,7 +271,7 @@ main>section {
 
   #experience-badge {
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: auto;
   }
 
   .copyright-box {
